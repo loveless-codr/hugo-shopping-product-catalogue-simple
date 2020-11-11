@@ -1,13 +1,16 @@
 {{ define "main" }}
-<header class="row">
-	<div class="col">
-    </div>
-	<div class="col">
-		<h1 class="text-center">{{ .Site.Title }}</h1>
-		{{ with .Site.Params.description }}<h4 class="text-center">{{ . }}</h4>{{ end }}
-    </div>
-    <div class="col">
-    </div>
+<header class="container-fluid">
+	<div class="row">
+		<div class="col">
+		</div>
+		<div class="col">
+			<h1 class="text-center">{{ .Site.Title }}</h1>
+			{{ with .Site.Params.description }}
+			<h4 class="text-center">{{ . }}</h4>{{ end }}
+		</div>
+		<div class="col">
+		</div>
+	</div>
 </header>
 <article class="container-fluid">
     <div class="row">
